@@ -1,0 +1,42 @@
+Criar Backup Personalizado
+
+zip -r ~/storage/downloads/Backup_Personalizado_$(date +%Y-%m-%d).zip api/utils.py api/slot_filling.py api/requirements.txt api/services/reminder_service.py api/messages.csv api/message_queue.py api/message_manager.py api/database_manager.py api/credentials.json api/config.py api/services/calendar_service.py api/bot.log api/app.py api/ai_agent.py api/.env api/handlers/scheduling_handler.py api/handlers/menu_handler.py api/handlers/cancellation_handler.py gateway-whatsapp/bot.js gateway-whatsapp/gateway.log gateway-whatsapp/gateway_log.txt gateway-whatsapp/package.json gateway-whatsapp/messages.js
+
+
+Criar saída .txt
+$nomes = @(
+    "utils.py",
+    "slot_filling.py",
+    "requirements.txt",
+    "reminder_service.py",
+    "messages.csv",
+    "message_queue.py",
+    "message_manager.py",
+    "database_manager.py",
+    "credentials.json",
+    "config.py",
+    "calendar_service.py",
+    "app.py",
+    "ai_agent.py",
+    ".env",
+    "scheduling_handler.py",
+    "menu_handler.py",
+    "bot.js",
+    "package.json",
+    "messages.js"
+)
+
+$saida = "saida.txt"
+
+# Limpa o arquivo de saída antes de começar
+if (Test-Path $saida) { Remove-Item $saida }
+
+# Percorre arquivos
+Get-ChildItem -File -Recurse | Where-Object {
+    $nomes -contains $_.Name -and
+    $_.Name -notin @("gateway.log", "saida.txt")
+} | ForEach-Object {
+    "### Arquivo: $($_.Name)" | Out-File -FilePath $saida -Append
+    Get-Content $_.FullName | Out-File -FilePath $saida -Append
+    "---------------------------------------------------------------" | Out-File -FilePath $saida -Append
+}

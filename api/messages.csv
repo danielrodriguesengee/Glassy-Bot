@@ -1,0 +1,243 @@
+key,text
+
+
+
+WELCOME,"✨ Olá, bem-vinda ao *Glass Studio*!\nEu sou a *Glassy*, sua assistente virtual, e estou aqui para te ajudar. 😊\n\nO que você gostaria de fazer?\n\n1. Agendar um horário 🗓️\n2. Cancelar um agendamento ❌\n3. Ver serviços e valores 💰\n4. Saber sobre nosso curso 🎓\n5. Falar com uma atendente 👩‍💼\n\n_É só me dizer o número da opção que você quer!_"
+
+
+
+PORTFOLIO_CAPTION,"Prontinho! ✨ Aqui está nosso catálogo completo, com todos os detalhes dos serviços e valores que você vai amar!\n\nDá uma olhadinha com carinho e me fala o que achou ou se já quer garantir seu horário! 😉"
+
+
+
+PORTFOLIO_SENT,"Portfólio enviado! 📄\nDê uma espiadinha e me conte o que mais gostou."
+
+
+
+PORTFOLIO_ERROR,"Ops! 😅 Parece que meu catálogo de serviços deu uma escapadinha...\n\nMas não se preocupe, já chamei a equipe para te ajudar com isso, tá bom? 🥰"
+
+
+
+COURSE_INFO,"Que demais seu interesse no nosso curso! 🎓✨\n\nNosso curso de *Nail Lapidação* é super especial, focado em *acabamento e durabilidade* para unhas perfeitas!\n\nA *Katlenn* é a pessoa ideal para te passar todas as informações sobre vagas e valores."
+
+
+
+COURSE_INFO_PROMPT,"Posso te transferir pra ela? ✨"
+
+
+
+TRANSFER_TO_HUMAN,"Com certeza! 🥰\nJá estou te transferindo para a *Katlenn*. Em instantes, ela vai te chamar por aqui para continuar a conversa, tá bom?\nÉ rapidinho!"
+
+
+
+SCHEDULING_REQUEST_DATE,"Claro! Para qual dia você gostaria de agendar? 😊\n\nPode ser, por exemplo: _'amanhã', 'próxima sexta' ou uma data como '25/12'._"
+
+
+
+SCHEDULING_NO_PROBLEM_ON_CANCEL,"Tudo bem, sem problemas! Se mudar de ideia ou precisar de outra coisa, é só me chamar. 😊"
+
+
+
+SCHEDULING_INVALID_DATE,"Puxa, não consegui entender essa data. 🤔 Você pode tentar 'dd/mm', como '25/12'?"
+
+
+
+SCHEDULING_SUNDAY_CLOSED,"Ah, que pena, não funcionamos aos domingos. 😔 Que tal na segunda, dia {next_day}?"
+
+
+
+SCHEDULING_PAST_DATE,"Essa data já passou! Vamos tentar uma data no futuro? 😉"
+
+
+
+SCHEDULING_NO_SLOTS,"Puxa, para a data informada, não tenho mais horários disponíveis. 😔 Teria outra data em mente?"
+
+
+
+SCHEDULING_AVAILABLE_SLOTS,"Perfeito! Para *{formatted_date}*, tenho estes horários:\n\n🕐 *{horarios_str}*\n\nQual você prefere? 😉"
+
+
+
+SCHEDULING_ASK_SWITCH_SLOT,"Sim, para esta data são os últimos horários. 😢\nSe quiser, posso te transferir para a *Katlenn* para tentarmos encontrar um horário de encaixe. O que acha?"
+
+
+
+SCHEDULING_TRY_ANOTHER_DATE,"Entendido! Vamos tentar de novo. Para qual outra data você gostaria de verificar a disponibilidade? 😊"
+
+
+
+SCHEDULING_INVALID_TIME,"Desculpe, não entendi. Por favor, escolha um dos horários da lista: 😊\n🕐 *{horarios_str}* "
+
+
+
+SCHEDULING_TIME_CONFIRMED,"✅ Horário escolhido! Para qual serviço seria?\n\n_Ex: Alongamento, Banho de gel, Manutenção..._"
+
+
+
+SCHEDULING_REQUEST_SERVICE,"Por favor, me diga qual serviço você gostaria de agendar. 😊"
+
+
+
+SCHEDULING_SERVICE_CONFIRMED,"✅Anotado! Para finalizar, qual seu nome completo?"
+
+
+
+SCHEDULING_REQUEST_FULL_NAME,"Por favor, digite seu nome completo para continuarmos. 😊"
+
+
+
+SCHEDULING_CONFIRM_PHONE,"Obrigada, *{name}*! Seu número para contato é o mesmo final `{last_digits}`?\n\n_(Sim ou Não)_"
+
+
+
+SCHEDULING_REQUEST_CORRECT_PHONE,"Entendi. Por favor, me informe o número correto com DDD para continuarmos.\n_Ex: (XX) 9XXXX-XXXX_ 😉"
+
+
+
+SCHEDULING_INVALID_PHONE,"Ops! Não encontrei nenhum agendamento com esse número. 🧐\nPoderia verificar se digitou o número certo? 😊"
+
+
+
+SCHEDULING_PHONE_CONFIRMED_ASK_OBS,"Ótimo! Alguma observação para o seu atendimento?\n\n_Se não, é só mandar um ""não""._ 📝"
+
+
+
+SCHEDULING_PHONE_CORRECTED_ASK_OBS,"Ótimo! Alguma observação para o seu atendimento?\n\n_Se não, é só mandar um ""não""._ 📝"
+
+
+
+SCHEDULING_POLICY_PROMPT,"Estamos quase lá! Para confirmar, pedimos um sinal de 50% do valor.\n\nPodemos continuar? 😉"
+
+
+
+SCHEDULING_FINAL_CONFIRMATION,"Perfeito, *{name}*! ✨\n\nSeu horário está confirmado: *{service}*, dia *{formatted_date}* às *{time}*.\n\nO próximo passo é com nossa equipe... 🥱\n\n📍 *Nosso Endereço:*\n_{address}_\n\nAté logo! 😉"
+
+
+
+SCHEDULING_CANCELLED,"Ahh... Entendido. O agendamento não foi confirmado.\nSe precisar de algo mais ou mudar de ideia, é só me chamar! 😉"
+
+
+
+SCHEDULING_API_ERROR,"Hmm, deu um probleminha para salvar seu agendamento. 😔 Mas relaxa! Já avisei a equipe e eles vão finalizar tudo para você. \nEm breve te mandamos a confirmação por aqui. ✨"
+
+
+
+CANCELLATION_REQUEST_PHONE,"Claro! Para cancelar, qual o número de telefone (com DDD) que você usou na marcação? 😉"
+
+
+
+CANCELLATION_FOUND_PROMPT,"Achei seu horário, *{client_name}*! ✨\n\n*{service_name}* em *{formatted_datetime}*.\n\nConfirma o cancelamento? _(Sim ou Não)_"
+
+
+
+CANCELLATION_NOT_FOUND,"Não encontrei agendamentos futuros para este número. 🤔 Tente outro número ou digite 'menu' para ver as opções."
+
+
+
+CANCELLATION_ABORTED,"Ok! Seu agendamento continua *confirmado*. Se precisar de algo mais, é só chamar! 😊"
+
+
+
+CANCELLATION_CONFIRMED,"Prontinho, horário *cancelado*. ❌\n\nMas que pena! Espero te ver em breve. ✨"
+
+
+
+CANCELLATION_API_ERROR,"Ops! 🆘 Não consegui cancelar. Já avisei a equipe para te ajudar com isso, tá bom?"
+
+
+
+CANCELLATION_CRITICAL_ERROR,"Aii, que pena! 😔 Tive um problema interno para processar seu cancelamento. Já chamei a equipe para te ajudar, tá bom? 🥰"
+
+
+
+REMINDER_24H,"Olá! ✨\n\nPassando para te lembrar do seu horário *amanhã* no *Glass Studio* para *{service}* às *{start_time}*.\n\nMal podemos esperar! 🥰"
+
+
+
+REMINDER_1H,"Oi, tudo bem? 🥰\n\nSeu horário no *Glass Studio* está chegando! Te esperamos em *1 hora* para *{service}*.\n\n📍 *Nosso Endereço:*\n_{address}_\n\nAté logo! ✨"
+
+
+
+GENERAL_OK_IF_YOU_NEED_ANYTHING,"Tudo bem! Se precisar de algo, é só chamar. 😊"
+
+
+
+GENERAL_OK_NO_PROBLEM,"Tudo bem, sem problemas! 😉 Se precisar de algo mais, é só me chamar!"
+
+
+
+GENERAL_THANKS,"De nada! Se precisar de algo mais, estou por aqui. 😊"
+
+
+
+GENERAL_LOST_FALLBACK,"Desculpe, me perdi um pouco. Vamos tentar de novo? Digite *menu* para começar."
+
+
+
+GENERAL_UNKNOWN_INTENT,"Desculpe, não entendi bem... 😅\n\nVocê pode tentar:\n- 'Quero agendar'\n- 'Ver serviços'\n- 'Cancelar horário'"
+
+
+
+SESSION_TIMEOUT,"Sua sessão expirou por inatividade. 😊\nDigite *menu* para começar de novo."
+
+
+
+AUTOMATION_PAUSED,"✅ _Automação pausada._"
+
+
+
+AUTOMATION_REACTIVATED,"✅ _Automação reativada._"
+
+
+
+TRANSFER_CONFIRM_REJECTED,"Entendido! Sem problemas. 😊\n\nOs horários que tenho são: 🕐 *{horarios_str}*.\n\nQual deles você prefere?"
+
+
+
+ESCAPE_INTENT_PORTFOLIO,"Enquanto envio nosso portfólio, podemos continuar de onde paramos?\n\n{last_question}"
+
+
+
+ESCAPE_INTENT_COURSE_INFO,"{course_info}\n\n{last_question}"
+
+
+
+AGENT_NOTIFY_HUMAN,"🔔 *Alerta de Atendimento* 🔔\n\nA cliente com o número `{client_number}` solicitou atendimento humano."
+
+
+
+AGENT_NOTIFY_BOOKING,"🗓️ *Novo Agendamento!* 🗓️\n\n👤 *Cliente:* {name}\n💅 *Serviço:* {service}\n⏰ *Quando:* Dia {formatted_date} às {time}"
+
+
+
+AGENT_NOTIFY_BOOKING_WITH_OBS,"🗓️ *Novo Agendamento!* 🗓️\n\n👤 *Cliente:* {name}\n💅 *Serviço:* {service}\n⏰ *Quando:* Dia {formatted_date} às {time}\n📝 *Observação:* {obs}"
+
+
+
+AGENT_NOTIFY_CANCELLATION,"❌ *Agendamento Cancelado* ❌\n\nO agendamento de *{client_name}* para *{datetime}* foi cancelado."
+
+
+
+CRITICAL_ERROR_WEBHOOK,"Ops! Algo deu muito errado aqui. 😔 Já notifiquei a equipe técnica. Tente novamente em instantes."
+
+
+
+GATEWAY_LIMITATION,"Olá! Eu sou a Glassy, uma assistente virtual. No momento, eu não consigo processar áudios, imagens, vídeos ou ligações. Por favor, envie sua solicitação em formato de texto. 😉"
+
+
+
+CANCELLATION_TOO_CLOSE,"Ops! 😬 Não é possível cancelar com menos de 24 horas de antecedência. Deseja falar com a *Katlenn*?\n_(Sim ou Não)_"
+
+
+
+CANCELLATION_TOO_CLOSE_AGENT,"Com certeza! 🥰 Já estou te transferindo para a *Katlenn*.\nEm instantes ela vai te chamar por aqui para continuar a conversa!"
+
+
+
+CANCELLATION_TOO_CLOSE_NO_AGENT,"Tudo bem! 😉 Obrigada pelo contato.\nEstaremos te aguardando no seu horário! ✨"
+
+
+
+REMINDER_RESPONSE,"Imagina! Precisando, é só chamar. 😊"
+
+
